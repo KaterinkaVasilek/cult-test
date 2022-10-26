@@ -5,9 +5,7 @@ const content = document.querySelector('.nav__content');
 const overlay = document.querySelector('.nav__overlay');
 const contentItem = document.querySelectorAll('.nav__item');
 
-export {toggleButton};
-
-if(document.querySelector('.burger-menu')) {
+if(document.querySelector('.nav__button')) {
     toggleButton.addEventListener("click", showMenu);
 
     function showMenu() {

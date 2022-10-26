@@ -1,0 +1,35 @@
+.navigation {
+    &__wrapper {
+        padding: 12px 16px;
+    }
+
+    &__list {
+        overflow-x: scroll;
+    }
+
+    &__list-content {
+        @include ul-style;
+
+        display: flex;
+        gap: 10px;
+        max-width: 100%;
+
+        @media (min-width: 900px) {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        color: $black80;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 8px 12px;
+        background-color: $gray-blue;
+        border-radius: 4px;
+        white-space: nowrap;
+    }
+}
+
+.navigation__list::-webkit-scrollbar {
+    display: none;
+}

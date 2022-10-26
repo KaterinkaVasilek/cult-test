@@ -4,21 +4,9 @@
 @import "mixins";
 @import "partials/header";
 @import "partials/burger-menu";
+@import "partials/navigation";
+@import "partials/offer";
 
 html {
     scroll-behavior: smooth;
-}
-
-.container {
-    min-width: 320px;
-    min-height: auto;
-
-    @media (min-width: 768px) {
-        min-width: 100%;
-    }
-
-    @media (min-width: 1200px) {
-        margin: 0 auto;
-        min-width: 100%;
-    }
 }
